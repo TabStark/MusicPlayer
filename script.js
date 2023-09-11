@@ -89,28 +89,14 @@ firstSong.addEventListener('click', ()=>{
     icon.classList.remove('fa-play');
     icon.classList.add('fa-pause')
     music.play()
-       
-    for (let i of array) {
-        i.style.color="white"
-        // console.log(i)
-    }
-        one.style.color="rgb(63, 185, 63)"
-    
-    
+           
 })
 secondSong.addEventListener('click', ()=>{
     setMusic(1)
     icon.classList.remove('fa-play');
     icon.classList.add('fa-pause')
     music.play()
-  
-    for (let i of array) {
-        i.style.color="white"
-    }
-    two.style.color="rgb(63, 185, 63)"
-    // one.style.color="white"
-
-   
+     
 })
 thirdSong.addEventListener('click', ()=>{
     setMusic(2)
@@ -118,10 +104,6 @@ thirdSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
     
-    for (let i of array) {
-        i.style.color="white"
-    }
-    three.style.color="rgb(63, 185, 63)"
 })
 forthSong.addEventListener('click', ()=>{
     setMusic(3)
@@ -129,10 +111,7 @@ forthSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    four.style.color="rgb(63, 185, 63)"
+    
 })
 fifthSong.addEventListener('click', ()=>{
     setMusic(4)
@@ -140,10 +119,6 @@ fifthSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    fivee.style.color="rgb(63, 185, 63)"
 })
 sixSong.addEventListener('click', ()=>{
     setMusic(5)
@@ -151,10 +126,6 @@ sixSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    six.style.color="rgb(63, 185, 63)"
 })
 seventhSong.addEventListener('click', ()=>{
     setMusic(6)
@@ -162,10 +133,6 @@ seventhSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    seven.style.color="rgb(63, 185, 63)"
 })
 eightSong.addEventListener('click', ()=>{
     setMusic(7)
@@ -173,10 +140,6 @@ eightSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    eight.style.color="rgb(63, 185, 63)"
 })
 ninthSong.addEventListener('click', ()=>{
     setMusic(8)
@@ -184,10 +147,6 @@ ninthSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    nine.style.color="rgb(63, 185, 63)"
 })
 tenthSong.addEventListener('click', ()=>{
     setMusic(9)
@@ -195,10 +154,6 @@ tenthSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    ten.style.color="rgb(63, 185, 63)"
 })
 eleventhSong.addEventListener('click', ()=>{
     setMusic(10)
@@ -206,10 +161,6 @@ eleventhSong.addEventListener('click', ()=>{
     icon.classList.add('fa-pause')
     music.play()
 
-    for (let i of array) {
-        i.style.color="white"
-    }
-    eleven.style.color="rgb(63, 185, 63)"
 })
 
 const formatTime = (time)=>{
