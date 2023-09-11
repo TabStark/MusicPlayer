@@ -363,8 +363,9 @@ body{
         margin: 18px;
     }
     .aside {
+        margin: 10px 0px;
         width: 150px;
-        height: 500px;
+        height: 515px;
     }
     .container {
         margin: 54px 5px;
