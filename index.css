@@ -362,6 +362,14 @@ body{
         font-size: 10px;
         margin: 18px;
     }
+    .aside {
+        width: 150px;
+        height: 500px;
+    }
+    .container {
+        margin: 54px 5px;
+    }
+
 }
 
 @media(max-width:381px){
@@ -369,7 +377,8 @@ body{
         font-size: 10px;
         margin: 18px 10px;
     }
-
+    
+    
 }
 
 @media (max-width:367px){
@@ -379,7 +388,7 @@ body{
 
     .container {
         box-shadow: none;
-        margin: 20px auto;
+        margin: 54px auto;
     }
     .footer {
         flex-wrap: wrap;
