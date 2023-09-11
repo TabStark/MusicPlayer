@@ -328,10 +328,7 @@ body{
 
 }
 @media(max-width:541px){
-    .aside {
-        width: 150px;
-        
-    }
+
     #left {
         font-size: 12px;
         margin: 15px;
@@ -353,24 +350,44 @@ body{
      box-shadow: none;
      margin: 20px 5px;
     }
+    .main{
+        flex-wrap: wrap;
+    }
+    .aside {
+        width: 222px;
+    }
 }
 
 
 
-@media (max-width:440px){
+@media (max-width:532px){
     #left {
         font-size: 10px;
         margin: 18px;
     }
     .aside {
-        margin: 10px 0px;
-        width: 150px;
-        height: 512px;
+        margin: 10px auto;
+        width: 90%;
+        height: 300px;
     }
     .container {
         margin: 54px 5px;
     }
-
+    .playlistSong {
+        width: 100%;
+    }
+    .container {
+        box-shadow: none;
+        margin: 54px auto;
+    }
+    .songname {
+        font-size: 01rem;
+        margin: 12px 25px;
+    }
+    .searchbox {
+        margin: 10px auto;
+        width: 95%;
+    }
 }
 
 @media(max-width:381px){
@@ -382,15 +399,15 @@ body{
     
 }
 
-@media (max-width:367px){
-    .aside{
-        display: none;
+@media (max-width:365px){
+    .songname {
+        font-size: 0.8rem;
+        margin: 12px 15px;
     }
+}
 
-    .container {
-        box-shadow: none;
-        margin: 54px auto;
-    }
+@media (max-width:367px){
+    
     .footer {
         flex-wrap: wrap;
         align-items: center;
