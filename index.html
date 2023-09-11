@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+
+    <div class="navbar">
+        <img src="image/music.png" alt="">
+        <p>StarkMusic</p>
+    </div>
+    <div class="searchbox">
+        <input type="text" name="" id="search" placeholder="Search " onclick="searchFunction()" >
+        <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
+    </div>
+
+    <div class="main">
+        <!-- Play List -->
+        <div class="aside">
+        <div class="playlist">
+            <button class="playlistSong" id="firstSong">
+                <img src="image/besharam 1.png" alt="">
+                <p class="songname" id="one">Besharam Rang</p>
+
+            </button>
+            <button class="playlistSong" id="secondSong">
+                <img src="image/chaiyya 1.png" alt="">
+                <p class="songname" id="two">Chaiyya Chaiyya</p>
+            </button>
+            <button class="playlistSong" id="thirdSong">
+                <img src="image/chaleya 1.png" alt="">
+                <p class="songname" id="three">Chaleya</p>
+            </button>
+            <button class="playlistSong" id="forthSong">
+                <img src="image/chammak 1.png" alt="">
+                <p class="songname" id="four">Chammak Challo</p>
+            </button>
+            <button class="playlistSong" id="fifthSong">
+                <img src="image/dream girl 1.png" alt="">
+                <p class="songname" id="five">Dil Ka Telephone</p>
+            </button>
+            <button class="playlistSong" id="sixSong">
+                <img src="image/zero 1.png" alt="">
+                <p class="songname" id="six">Jab Tak Jahan Mein</p>
+            </button>
+            <button class="playlistSong" id="seventhSong">
+                <img src="image/images 1.jpg" alt="">
+                <p class="songname" id="seven">Jawan Title Track</p>
+            </button>
+            <button class="playlistSong" id="eightSong">
+                <img src="image/jawan 1.png" alt="">
+                <p class="songname" id="eight">Jawan Title Track</p>
+            </button>
+            <button class="playlistSong" id="ninthSong">
+                <img src="image/jhomme 1.png" alt="">
+                <p class="songname" id="nine">Jhomme Jo pathaan</p>
+            </button>
+            <button class="playlistSong" id="tenthSong">
+                <img src="image/ramaiya 1.png" alt="">
+                <p class="songname" id="ten">Not Ramaiya Vastavaiya</p>
+            </button>
+            <button class="playlistSong" id="eleventhSong">
+                <img src="image/pathaan.png" alt="">
+                <p class="songname" id="eleven">Pathaan Motion Poster</p>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p class="music-name">Song Name</p>
+        <p class="artist-name">artist</p>
+
+        <div class="disk"></div>
+
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+        </div>
+
+        <div class="time">
+            <p class="current-time">00:00</p>
+            <p class="song-duration">00:00</p>
+        </div>
+
+        <div class="control">
+            <button class="backward"><i class="fa-solid fa-backward"></i></button>
+            <button class="Play"><i class="fa-solid fa-play" id="icon"></i></button>
+            <!-- <i class="fa-solid fa-pause"></i> -->
+            <button class="forward"><i class="fa-solid fa-forward"></i></button>
+            
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="right">
+        <img src="image/music.png" alt="">
+        <p>StarkMusic</p>
+    </div>
+    <p id="left">©2023 StarkMusic All Rights Reserved</p>
+</div>
+</body>
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,395 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --thumbBG:gray;
+    --scrollbarBG : black
+
+}
+body{
+    background-color: black;
+}
+.aside::-webkit-scrollbar {
+    width: 11px;
+}
+
+.aside {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    scroll-behavior: smooth;
+}
+
+.aside::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+.aside::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+.navbar{
+    display: flex;
+    height: 86px;
+    border: 2px solid rgb(40, 39, 39);
+    box-shadow: 0px 1px 1px 1px rgb(40, 39, 39);
+    border-radius: 10px;
+}
+.navbar img{
+    height: 80px;
+    width: 80px;
+}
+.navbar p{
+    margin-top: 15px;
+    font-size: 2rem;
+    color: green;
+    font-family: 'Righteous', cursive;
+
+}
+
+.main{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid rgb(84, 84, 84);
+    height: 50px;
+    width: 410px;
+}
+.searchbox input{
+    margin: 0px 10px;
+    padding: 10px;
+    height: 40px;
+    width: 85%;
+    background-color: black;
+    color: rgb(84, 84, 84);
+    font-size: 15px;
+    border: none;
+}
+.searchbox input:focus{
+    outline: none;
+    border: none;
+    color: white;
+}
+
+#searchicon{
+    /* margin: 10px; */
+    font-size: 1.5rem;
+    color: white
+}
+
+.aside{
+    overflow-y: scroll;
+    height: 430px;
+    border: 2px solid rgb(84, 84, 84);
+    border-radius: 10px;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+
+}
+.playlistSong{
+    padding: 0px 10px;
+    display: flex;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid gray;
+}
+
+.playlistSong img{
+    height: 45px;
+    width: 45px;
+}
+.songname{
+    margin: 12px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    /* border: 2px solid red; */
+    background-color: rgb(34, 34, 34);
+    width: 350px;
+    height: 400px;
+    border: 2px solid rgb(84, 84, 84);
+    margin: 20px auto;
+    padding: 0px 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgb(84, 84, 84);
+}
+
+.music-name{
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+
+}
+
+.artist-name{
+    /* margin-top: 5px; */
+    font-size: 12px;
+    color: white;
+}
+
+.disk{
+    margin: auto;
+    margin-top: 5px;
+    height: 229px;
+    width: 183px;
+    background-image: url(image/pathaan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(84, 84, 84);   
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 10px;
+    /* background-color: black; */
+    border-radius:50% ;
+    box-shadow: -400px 0px 0px 400px white;
+
+}
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: white;
+}
+
+.control button{
+    margin-top: 10px;
+    padding: 0px 5px;
+    font-size: 1.1rem;
+    border-radius:50%;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.control button:hover{
+    background-color: white;
+    color: black;
+}
+.Play{
+    height: auto;
+    width: 35px;
+    margin: 0px 40px;
+}
+.Play i{
+    
+    padding: 5px;
+    font-size: 1.5rem;  
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    border: 2px solid rgb(40, 39, 39);
+}
+
+.right{
+    display: flex;
+    margin: 10px;
+}
+.right img{
+    height: 50px;
+    width: 50px;
+}
+
+.right p{
+    margin: 10px;
+    color: green;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+}
+
+#left {
+    text-align: center;
+    margin: 20px;
+    margin-right: 35%;
+    color: white;
+}
+
+@media (max-width:970px){
+    #left {
+        margin-right: 30%;
+        
+    }   
+}
+
+@media (max-width:900px){
+    .searchbox {
+        width: 350px;
+    }
+    .aside {
+        width: 344px;
+    }
+    .playlistSong {
+        width: 329px;
+    }
+    #left {
+      font-size: 15px;
+        
+    } 
+}
+
+
+@media(max-width: 800px){
+    .navbar {
+        height: 76px;
+    }
+    #left {
+        margin-right: 28%;
+          
+      } 
+
+      .container {
+        width: 338px;
+        height: 393px;
+      }
+}
+
+@media (max-width: 730px) {
+    .songname {
+        font-size: 0.8rem;
+    }
+
+    .aside {
+        width: 276px;
+    }
+    
+    .playlistSong {
+        width: 261px;
+    }
+    
+    .searchbox {
+        width: 274px;
+    }
+    #left {
+        font-size: 13px;
+        margin-right: 22%;
+    }
+    
+}
+
+@media(max-width:657px){
+    .container {
+        width: 300px;
+        height: 391px;
+    }
+    .playlistSong {
+        width: 207px;
+    }
+    .songname {
+        font-size: 0.7rem;
+        margin: 12px 1px;
+    }
+    .aside {
+        width: 200px;
+        overflow-x: hidden;
+    }
+    .searchbox {
+        width:100%;
+    }
+    #left {
+        font-size: 12px;
+        margin-right: 18%;
+    }
+
+}
+@media(max-width:541px){
+    .aside {
+        width: 150px;
+        
+    }
+    #left {
+        font-size: 12px;
+        margin: 15px;
+        margin-right: 10%;
+    }
+    .right img {
+        height: 30px;
+        width: 30px;
+    }
+    .right p {
+        margin: 2px 10px;
+        font-size: 16px;
+    }
+    .footer {
+        height: 47px;
+        
+    }
+    .container {
+     box-shadow: none;
+     margin: 20px 5px;
+    }
+}
+
+
+
+@media (max-width:440px){
+    #left {
+        font-size: 10px;
+        margin: 18px;
+    }
+}
+
+@media(max-width:381px){
+    #left {
+        font-size: 10px;
+        margin: 18px 10px;
+    }
+
+}
+
+@media (max-width:367px){
+    .aside{
+        display: none;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 20px auto;
+    }
+    .footer {
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    } 
+    #left {
+
+        font-size: 10px;
+        margin: 0px auto;
+        text-align: center;
+    }
+}
