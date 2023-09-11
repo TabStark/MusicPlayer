@@ -242,11 +242,26 @@ body{
     color: white;
 }
 
+@media(max-width:1440px){
+    .footer{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width:1318px){
+    .footer{
+        margin-top: 100px;
+    }
+}
+
 @media (max-width:970px){
     #left {
         margin-right: 30%;
         
     }   
+    .footer{
+        margin-top: 0px;
+    }
 }
 
 @media (max-width:900px){
